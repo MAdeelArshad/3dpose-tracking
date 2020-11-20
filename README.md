@@ -6,8 +6,9 @@ This script use open pose with tensorflow extension to calculate 2D pose of huma
 #### ubuntu:
 1. First of all install cmake gcc and build essentials by this command
 ```
-  1. sudo apt update 
-  2. sudo apt-get install git cmake build-essential libusb-1.0-0-dev
+	sudo apt update 
+	sudo apt-get install git cmake build-essential libusb-1.0-0-dev
+	sudo apt install python-numpy
 ```
 
 
@@ -16,8 +17,12 @@ This script use open pose with tensorflow extension to calculate 2D pose of huma
 3.  Create Conda ENV:
 
 ```
-  1. conda create -n  AIMachine
-  2. conda activate AIMachine
+	conda create -n  AIMachine
+	conda activate AIMachine
+	conda install anaconda
+	conda install python==3.7.6
+	conda install opencv
+	conda install tensorflow
 ```
 
 
@@ -35,15 +40,7 @@ This script use open pose with tensorflow extension to calculate 2D pose of huma
   9. cd ../../../
 ```
 
-5. Install Tensor flow and Open cv Python 
-
-```
-  1. conda install python==3.7.6
-  2. conda install opencv
-  3. conda install tensorflow
-```
-
-6. Install tf-pose Estimation using these links:
+5. Install tf-pose Estimation using these links:
 
 ```
   1. git clone https://github.com/gsethi2409/tf-pose-estimation.git
