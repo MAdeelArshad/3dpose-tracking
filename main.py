@@ -15,7 +15,7 @@ if __name__ == '__main__':
     parser.add_argument('--show-process', type=bool, default=False,
                         help='for debug purpose, if enabled, speed for inference is dropped.')
     parser.add_argument('--option', type=str, default="camera", help="Camera / Kinect / image_path / camera_image")
-    parser.add_argument('--tensorrt', type=str, default="Fals  e",
+    parser.add_argument('--tensorrt', type=str, default="False",
                         help='for tensorrt process.')
     args = parser.parse_args()
     pose = PoseEstimation(args, option=args.option)
