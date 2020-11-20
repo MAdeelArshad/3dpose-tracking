@@ -126,7 +126,7 @@ class PoseEstimation(object):
         #             "FPS: %f" % (1.0 / (time.time() - terrain.fps_time)),
         #             (10, 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
         #             (0, 255, 0), 2)
-        # cv2.imshow('tf-pose-estimation result', image)
+        # cv2.imshow('tf-pose-estimation resul  t', image)
         # terrain.fps_time = time.time()
         # cv2.waitKey(1)
 
