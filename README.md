@@ -29,30 +29,30 @@ This script use open pose with tensorflow extension to calculate 2D pose of huma
 4. Install libfreenect library :
 
 ```
-  1. mkdir bin && cd bin
-  2. git clone https://github.com/OpenKinect/libfreenect
-  3. cd libfreenect
-  4. mkdir build  && cd build
-  5. cmake .. -DBUILD_PYTHON3=ON -DCYTHON_EXECUTABLE=/home/$USER/anaconda3/envs/AIMachine/bin/cython -DCMAKE_INSTALL_PREFIX=/home/$USER/anaconda3/envs/AIMachine -L
-  6. sudo make install 
-  7. cd ../wrappers/python
-  8. python setup.py install
-  9. cd ../../../
+	mkdir bin && cd bin
+	git clone https://github.com/OpenKinect/libfreenect
+	cd libfreenect
+	mkdir build  && cd build
+	cmake .. -DBUILD_PYTHON3=ON -DCYTHON_EXECUTABLE=/home/$USER/anaconda3/envs/AIMachine/bin/cython -DCMAKE_INSTALL_PREFIX=/home/$USER/anaconda3/envs/AIMachine -L
+	sudo make install
+	cd ../wrappers/python
+	python setup.py install
+	cd ../../../
 ```
 
 5. Install tf-pose Estimation using these links:
 
 ```
-  1. git clone https://github.com/gsethi2409/tf-pose-estimation.git
-  2. cd tf-pose-estimation
-  3. pip install -r requirements.txt
-  4. conda install swig
-  5. cd tf_pose/pafprocess
-  6. swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
-  7. cd ../../
-  8. pip install git+https://github.com/adrianc-a/tf-slim.git@remove_contrib
-  9. cd models/graph/cmu
-  10. bash download.sh
-  11. cd ../../..
-  12.python setup.py install
+	git clone https://github.com/gsethi2409/tf-pose-estimation.git
+	cd tf-pose-estimation
+	pip install -r requirements.txt
+	conda install swig
+	cd tf_pose/pafprocess
+	swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
+	cd ../../
+	pip install git+https://github.com/adrianc-a/tf-slim.git@remove_contrib
+	cd models/graph/cmu
+	bash download.sh
+	cd ../../..
+	python setup.py install
 ```
